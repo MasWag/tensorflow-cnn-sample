@@ -18,8 +18,7 @@ ptb: data/PTB/
 
 data/PTB/: simple-examples.tgz
 	mkdir -p $@
-	cd $@
-	tar xvf ../../$<
+	cd $@ && tar xvf ../../$<
 
 simple-examples.tgz: 
 	wget http://www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz
